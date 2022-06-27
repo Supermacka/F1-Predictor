@@ -1,0 +1,24 @@
+// Dynamic spacing - https://stackoverflow.com/questions/58069059/dynamic-spacing-classes-with-sass
+
+$ss0: 0rem; 
+$ss2: .2rem;
+$ss4: .4rem; 
+$ss8: .8rem; 
+$ss12: 1.2rem; 
+$ss16: 1.6rem; 
+$ss20: 2.0rem; 
+$ss24: 2.4rem; 
+$ss32: 3.2rem; 
+$ss40: 4.0rem; 
+$ss48: 4.8rem; 
+$ss56: 5.6rem; 
+$ss64: 6.4rem; 
+$ss72: 7.2rem; 
+$ss80: 8.0rem; 
+$ss152: 15.2rem;
+
+// Element Classes (Grid)
+.grid-layout--large {
+    background-color: orange;
+    padding: 0 $ss152 0 $ss152;
+}

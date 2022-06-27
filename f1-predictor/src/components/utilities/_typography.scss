@@ -1,0 +1,85 @@
+@use "./colors" as c;
+@use "./fonts" as f;
+@use "./spacing" as s;
+
+// FontSizes
+$fs16: 1.6rem;
+$fs18: 1.8rem; 
+$fs24: 2.4rem; 
+$fs32: 3.2rem;
+$fs40: 4rem;
+$fs48: 4.8rem;
+$fs56: 5.6rem;
+$fs64: 6.4rem;
+
+// - - - - Modifier Classes - - - -
+.uppercase 
+{
+    text-transform: uppercase;
+}
+
+.icon--large {
+    font-size: $fs32;
+}
+
+// - - - - Elements - - - -
+// font-family: 'Anek Malayalam', sans-serif;
+// font-family: 'Raleway', sans-serif;
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: $fs64;
+    color: c.$title;
+    margin-bottom: s.$ss16;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: $fs40;
+    letter-spacing: s.$ss8;
+    color: c.$subtitle;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: $fs32;
+    color: c.$subtitle;
+}
+
+h4 {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: $fs18;
+    color: c.$subtitle;
+}
+
+@mixin input-large {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: $fs32;
+    font-weight: 700;
+    color: c.$input-large;
+}
+
+@mixin input-prediction-label {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: $fs32;
+    font-weight: 700;
+    color: c.$input-prediction-label;
+}
+
+@mixin input-prediction-button {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: $fs32;
+    font-weight: 700;
+}
+
+// @mixin card-title {
+//     font-family: 'Anek Malayalam', sans-serif;
+//     font-size: $fs24;
+//     color: c.$subtitle;
+// }
+
+// @mixin card-subtitle {
+//     font-family: 'Anek Malayalam', sans-serif;
+//     font-size: $fs18;
+//     color: c.$subtitle;    
+// }

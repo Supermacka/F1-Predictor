@@ -1,0 +1,95 @@
+@use "../utilities/spacing" as s;
+@use "../utilities/effects" as e;
+@use "../utilities/colors" as c;
+@use "../utilities/typography" as t;
+
+@mixin input__field {
+    padding: 2.4rem 4.0rem;
+    display: inline-block;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+    background-color: c.$input-prediction-background;
+
+    @include t.input-large;
+
+    &:focus {
+        background-color: c.$input-prediction-focus;
+        
+        &span,
+        &::placeholder
+        {
+            color: c.$input-prediction-label-focus;
+            background-color: green;
+        }
+         
+    }
+}
+
+.input-prediction {
+    max-width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+
+    background-color: c.$grey-50;
+    box-shadow: e.$shadow-large;
+
+    &__position-container {
+        flex: 1;
+        position: relative;
+        border-right:solid c.$grey-300 0.1rem;
+        background-color: pink;
+    }
+    &__position {
+        @include input__field;
+
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        left: 0;
+        
+        width: 100%;
+        padding-right: 8.8rem;
+
+        border-right:solid 0.1rem c.$grey-300;
+
+
+    }
+    &__position-label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 4.0rem;
+        width: auto;
+        @include t.input-prediction-label;
+    }
+
+    &__driver {
+        flex: 3;
+        @include input__field;
+
+        &::placeholder {
+            @include t.input-prediction-label;
+        }
+    }
+
+    &__button {
+        margin: 0;
+        padding: 2.4rem 4.0rem;
+        outline: none;
+        border: none;
+        
+        @include t.input-prediction-button;
+        
+        background-color: c.$input-prediction-button-background;
+        color: c.$input-prediction-button-color;
+        
+        &:hover, &:focus {
+            background-color: c.$input-prediction-button-hover-background;
+            color: c.$input-prediction-button-hover-color;
+        }
+    }
+}

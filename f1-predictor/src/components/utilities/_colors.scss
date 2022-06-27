@@ -1,0 +1,56 @@
+// Default
+$white: #ffffff;
+$black: #000000;
+
+// Main
+$grey-50: #fcfcfc; 
+$grey-100: #F6F6F6; 
+$grey-200: #EEEEEE; 
+$grey-300: #E0E0E0; 
+$grey-400: #BDBDBD; 
+$grey-500: #9E9E9E;
+$grey-600: #757575;
+$grey-700: #545454;
+$grey-800: #424242;
+$grey-900: #212121;
+
+$black-50: #A49F9D;
+$black-100: #8D8784;
+$black-200: #77706C;
+$black-300: #655D57;
+$black-400: #584E47;
+$black-500: #4A3E36;
+$black-600: #3E3027;
+$black-700: #302118;
+$black-800: #21140C;
+$black-900: #170900;
+
+$red-50: #FFECE8;
+$red-100: #F4CEC7;
+$red-200: #EDAA9E;
+$red-300: #EA8775;
+$red-400: #E25E46;
+$red-500: #E43C1A;
+$red-600: #D33313;
+$red-700: #BF290A;
+$red-800: #A72004;
+$red-900: #871700;
+
+// Elements
+$background-primary: $white;
+
+$title: $grey-50;
+$subtitle: $grey-400;
+$overlay: $black-800;
+$input-large: $grey-700;
+
+$input-prediction-background: $grey-50;
+$input-prediction-label: $grey-400;
+$input-prediction-label-focus: $grey-900;
+$input-prediction-focus: $red-50;
+
+$input-prediction-button-background: $grey-50;
+$input-prediction-button-color: $red-500;
+$input-prediction-button-hover-background: $red-500;
+$input-prediction-button-hover-color: $grey-50;
+
