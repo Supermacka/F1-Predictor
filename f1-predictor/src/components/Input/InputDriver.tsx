@@ -7,8 +7,9 @@ import useForm from 'hooks/useForm';
 const InputDriver: FC = () => {
   const [value, handleChange] = useForm();
 
-  const handleSubmit = (e: FormEvent) => {
-    // Add card
+  // e: FormEvent
+  const handleSubmit = () => {
+    // Add driver card
   };
   return (
     <form onSubmit={handleSubmit} className='input-prediction'>
