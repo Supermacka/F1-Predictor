@@ -1,14 +1,14 @@
-import React from 'react'
-import Banner from "components/Banner/Banner";
-import Main from "components/Main/Main";
+import React from 'react';
+import Banner from 'components/Banner/Banner';
+import Main from 'components/Main/Main';
 
 const Prediction = () => {
   return (
     <div>
-        <Banner />
-        <Main />
+      <Banner />
+      <Main />
     </div>
-  )
-}
+  );
+};
 
-export default Prediction
+export default Prediction;
