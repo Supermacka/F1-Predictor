@@ -15,7 +15,7 @@ const Banner = () => {
           />
         </div>
 
-        <div className='banner__container'>
+        <div className='banner__container grid-layout--large'>
           <div className='banner__title'>
             <h1>Belgian Grand Prix</h1>
             <span className='banner__subtitle'>

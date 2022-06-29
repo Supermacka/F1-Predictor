@@ -14,11 +14,19 @@ $ss48: 4.8rem;
 $ss56: 5.6rem; 
 $ss64: 6.4rem; 
 $ss72: 7.2rem; 
-$ss80: 8.0rem; 
+$ss80: 8.0rem;
+$ss88: 8.8rem;
+$ss96: 9.6rem;
+$ss104: 10.4rem;
+$ss112: 12.2rem; 
 $ss152: 15.2rem;
+
+$banner-height: 25rem;
 
 // Element Classes (Grid)
 .grid-layout--large {
-    background-color: orange;
-    padding: 0 $ss152 0 $ss152;
+  padding: 0 $ss152 0 $ss152;
+  max-width: 180rem;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,0 +1,9 @@
+@use "../utilities/spacing" as s;
+
+    .main {
+        margin-top: calc(s.$banner-height + s.$ss104);
+
+        h3 {
+            color: black;
+        }
+    }
