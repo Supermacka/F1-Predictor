@@ -88,5 +88,10 @@
       background-color: c.$input-prediction-button-hover-background;
       color: c.$input-prediction-button-hover-color;
     }
+
+    &:active {
+        background-color: c.$input-prediction-button-active-background;
+        color: c.$input-prediction-button-active-color;
+    }
   }
 }
