@@ -1,11 +1,22 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 
 type Input = {
   [key: string]: any; // 👈️ variable key
 };
 
-const useForm = (): [Input, (e: ChangeEvent<HTMLInputElement>) => void] => {
+type ReturnType = [
+  Input,
+  (e: ChangeEvent<HTMLInputElement>) => void,
+  (e: FormEvent) => void,
+];
+
+const useForm = (submitCallback: () => void): ReturnType => {
   const [state, setState] = useState<Input>({});
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    submitCallback();
+  };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     e.persist();
@@ -14,7 +25,7 @@ const useForm = (): [Input, (e: ChangeEvent<HTMLInputElement>) => void] => {
     setState((currentState) => ({ ...currentState, [name]: value }));
   };
 
-  return [state, handleChange];
+  return [state, handleChange, handleSubmit];
 };
 
 export default useForm;

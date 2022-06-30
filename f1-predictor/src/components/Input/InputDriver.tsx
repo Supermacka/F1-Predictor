@@ -1,16 +1,24 @@
-import React, { FC, FormEvent } from 'react';
+import React, { FC, useEffect } from 'react';
 import 'components/Input/inputDriver.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import useForm from 'hooks/useForm';
 
 const InputDriver: FC = () => {
-  const [value, handleChange] = useForm();
-
   // e: FormEvent
-  const handleSubmit = () => {
+  const addDriverPrediction = () => {
     // Add driver card
   };
+
+  const [value, handleChange, handleSubmit] = useForm(addDriverPrediction);
+
+  const getMatchingDrivers = () => {
+    console.log('Changed:', value.name);
+  };
+  useEffect(() => {
+    getMatchingDrivers();
+  }, [value.name]);
+
   return (
     <form onSubmit={handleSubmit} className='input-prediction'>
       <label className='input-prediction__position-container'>
